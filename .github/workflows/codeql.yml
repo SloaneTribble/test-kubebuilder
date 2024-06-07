@@ -79,6 +79,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
+        cd /projects/project
         make build
         # exit 1
 
